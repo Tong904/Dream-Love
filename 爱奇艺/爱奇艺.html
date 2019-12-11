@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>爱奇艺-在线视频网站-海量正版高清视频在线观看</title>
+		<link rel="stylesheet" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<a href="//www.iqiyi.com" title="爱奇艺视频" ><img src="img/logo.gif" ></a>
+			</div>	
+			<div class="yonghu">
+				<img src="img/yonghu.gif" >
+			</div>
+			
+		</div>
+		<div class="qy-nav" style="display: none;" :style="{ display: 'block' }">
+		    <div class="nav-channel">
+		                        <a target="_blank" v-if="props.showFixed || props.nonIndex" rseat="909181_topnav_dianshiju" class="nav-link nav-index" href="//www.iqiyi.com/dianshiju/">电视剧</a>
+		                        <a target="_blank" v-if="props.showFixed || props.nonIndex" rseat="909181_topnav_dianying" class="nav-link nav-index" href="//www.iqiyi.com/dianying/">电影</a>
+		                        <a target="_blank" v-if="props.showFixed || props.nonIndex" rseat="909181_topnav_zongyi" class="nav-link nav-index" href="//www.iqiyi.com/zongyi/">综艺</a>
+		                        <a target="_blank" v-if="props.showFixed || props.nonIndex" rseat="909181_topnav_dongman" class="nav-link nav-index" href="//www.iqiyi.com/dongman/">动漫</a>
+		                        <a target="_blank" v-if="props.showFixed || props.nonIndex" rseat="909181_topnav_ertong" class="nav-link nav-index" href="//child.iqiyi.com/">儿童</a>
+		                        <a target="_blank" v-if="props.showFixed || props.nonIndex" rseat="909181_topnav_jilupian" class="nav-link nav-index" href="//www.iqiyi.com/jilupian/">纪录片</a>
+		                </div>
+		    <div is="ui-dropdown" :rseat="'712211_topNav'" id="dhBtn" class="nav-guide nav-link" trigger="hover" trigger-class="selected" transition-name="slideInDownNav" dropdown-wrap-class="qy-nav-panel qy-nav-pop">
+		        <span slot="dropdownBtn" v-if="props.showFixed || props.nonIndex">
+		            <span class="show920">
+		                导航<i class="qy-svgicon qy-svgicon-guide-narrow"></i><i class="qy-svgicon qy-svgicon-guide-narrow-up"></i>
+		            </span>
+		            <span class="hidden920">
+		                全部<i class="qy-svgicon qy-svgicon-guide-narrow"></i><i class="qy-svgicon qy-svgicon-guide-narrow-up"></i>
+		            </span>
+		        </span>
+			</div>
+		</div>
+	</body>
+</html>
